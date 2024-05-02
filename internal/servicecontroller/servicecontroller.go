@@ -16,9 +16,9 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/costela/hcloud-ip-floater/internal/config"
-	"github.com/costela/hcloud-ip-floater/internal/fipcontroller"
-	"github.com/costela/hcloud-ip-floater/internal/stringset"
+	"github.com/SBE-network-solutions-GmbH/hcloud-ip-floater/internal/config"
+	"github.com/SBE-network-solutions-GmbH/hcloud-ip-floater/internal/fipcontroller"
+	"github.com/SBE-network-solutions-GmbH/hcloud-ip-floater/internal/stringset"
 )
 
 type podInformerType struct {

@@ -3,7 +3,7 @@ package fipcontroller
 import (
 	"context"
 
-	"github.com/hetznercloud/hcloud-go/hcloud"
+	"github.com/hetznercloud/hcloud-go/v2/hcloud"
 )
 
 // HcloudClienter wraps a thin interface around the hcloud.Client to make it more easily mockable
@@ -35,7 +35,7 @@ type hcloudFloatingIPer interface {
 }
 
 type hcloudServerer interface {
-	GetByID(context.Context, int) (*hcloud.Server, *hcloud.Response, error)
+	GetByID(context.Context, int64) (*hcloud.Server, *hcloud.Response, error)
 	GetByName(context.Context, string) (*hcloud.Server, *hcloud.Response, error)
 }
 

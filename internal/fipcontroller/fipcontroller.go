@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hetznercloud/hcloud-go/hcloud"
+	"github.com/hetznercloud/hcloud-go/v2/hcloud"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sync/singleflight"
 
-	"github.com/costela/hcloud-ip-floater/internal/config"
-	"github.com/costela/hcloud-ip-floater/internal/stringset"
+	"github.com/SBE-network-solutions-GmbH/hcloud-ip-floater/internal/config"
+	"github.com/SBE-network-solutions-GmbH/hcloud-ip-floater/internal/stringset"
 )
 
 type Controller struct {

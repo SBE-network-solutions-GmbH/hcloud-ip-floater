@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hetznercloud/hcloud-go/hcloud"
+	"github.com/hetznercloud/hcloud-go/v2/hcloud"
 	"github.com/sirupsen/logrus"
 	"github.com/stevenroose/gonfig"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/costela/hcloud-ip-floater/internal/config"
-	"github.com/costela/hcloud-ip-floater/internal/fipcontroller"
-	"github.com/costela/hcloud-ip-floater/internal/servicecontroller"
+	"github.com/SBE-network-solutions-GmbH/hcloud-ip-floater/internal/config"
+	"github.com/SBE-network-solutions-GmbH/hcloud-ip-floater/internal/fipcontroller"
+	"github.com/SBE-network-solutions-GmbH/hcloud-ip-floater/internal/servicecontroller"
 )
 
 const (
